@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { StaticImage } from "gatsby-plugin-image"
+import person from "../images/person.png"
 import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "gatsby"
 
@@ -12,9 +12,14 @@ h2{
     text-decoration: underline;
     color: #3e3d3d;
 }
+`
+const ContainerDiv = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
 img{
     margin-top: 25px;
-    
+    width: 80%;
 }
 div{
     table, p{
@@ -49,16 +54,21 @@ div{
         }
     }
 }
+@media (min-width: 900px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1300px;
+    margin: 0 auto;
+}
 `
 
 const AboutMe = () =>{
     return(
         <Container>
-            <h2>About Me</h2>
-            <StaticImage
-                src="../images/person.png"
-                width={1000}
-                quality={95}
+                        <h2>About Me</h2>
+            <ContainerDiv>
+            <img
+                src={person}
                 alt="Person and Computer"
                 />
             <div>
@@ -101,6 +111,7 @@ const AboutMe = () =>{
                 </table>
                 <Link to='/'>Read More<AiOutlineArrowRight/></Link>
             </div>
+          </ContainerDiv>
         </Container>
     )
 }

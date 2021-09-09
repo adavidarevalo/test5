@@ -9,7 +9,9 @@ const fadeIn = keyframes`
 
 
 const Container = styled.div`
-position: relative;
+display: flex;
+flex-direction: column;
+width: auto !important;
 div{
     display: none;
     position: absolute;

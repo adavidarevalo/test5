@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { keyframes } from '@emotion/react'
 import {Link} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby';
 
 
 const fadeIn = keyframes`
@@ -20,8 +21,10 @@ const fadeInLeft = keyframes`
   transform: none;
   }
   `
-const Header = () =>{
+const Header = (props) =>{
   const [menu, setMenu] = useState(true)
+
+
 const ContainerHeader = styled.header`
 width: 100%;
 background: linear-gradient(90deg, rgba(69,16,138,1) 0%, rgba(61,6,95,1) 38%, rgba(32,5,84,1) 100%);
@@ -58,8 +61,9 @@ div{
       font-family: 'Ubuntu', sans-serif;
       text-align: center;
       display: block;
+      text-decoration: none;
       &.activePage{
-        border-bottom: 2px solid #fff;
+        text-decoration: underline;
       }
     }
   }
@@ -73,13 +77,12 @@ div{
     a{
       margin: 0px;
       margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-family: 'Ubuntu', sans-serif;
       &.activePage{
-        border-bottom: 2px solid #fff;
+        text-decoration: underline;
       }
-    }
-    select{
-      margin-left: 15px;
-      outline: none;
     }
   }
 }
@@ -106,7 +109,7 @@ div{
           <Link 
           to='/'
           activeClassName="activePage"
-          >Home</Link>
+          >home</Link>
           <Link 
           to='/AboutMe'
           activeClassName="activePage"
@@ -115,13 +118,6 @@ div{
           to='/Portafolio'
           activeClassName="activePage"
           >Portafolio</Link>
-          <li>
-            <select>
-              <option value='en' selected>English</option>
-              <option value='es'>Spanish</option>
-              <option value='pt'>Portuguese</option>
-            </select>
-          </li>
         </ul>
         <nav>
             <Link 
@@ -136,11 +132,6 @@ div{
             to='/Portafolio'
             activeClassName="activePage"
             >Portafolio</Link>
-              <select>
-                <option value='en' selected>English</option>
-                <option value='es'>Spanish</option>
-                <option value='pt'>Portuguese</option>
-              </select>
         </nav>
       </div>
     </ContainerHeader>

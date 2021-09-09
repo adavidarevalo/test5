@@ -27,8 +27,15 @@ flex-wrap: wrap;
 ul{
     list-style: none;
 }
+@media (min-width: 900px){
+  ul{
+    display: flex;
+    li:nth-child(2){
+      margin-inline: 20px;
+    }
+  }
+}
 ` 
-
 const Footer = () => {
     //year
     var date = new Date()
