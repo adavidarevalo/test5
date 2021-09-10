@@ -25,6 +25,7 @@ div{
     table, p{
         width: 80%;
         margin: 0 auto;
+        font-family: 'Ubuntu', sans-serif;
     }
     p{
         margin-block: 25px;
@@ -54,7 +55,7 @@ div{
         }
     }
 }
-@media (min-width: 900px){
+@media (min-width: 1300px){
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1300px;
@@ -62,7 +63,7 @@ div{
 }
 `
 
-const AboutMe = () =>{
+const AboutMe = ({LinkNo}) =>{
     return(
         <Container>
                         <h2>About Me</h2>
@@ -109,7 +110,7 @@ const AboutMe = () =>{
                         </td>
                     </tr>
                 </table>
-                <Link to='/'>Read More<AiOutlineArrowRight/></Link>
+                {!LinkNo && <Link to='/'>Read More<AiOutlineArrowRight/></Link>}
             </div>
           </ContainerDiv>
         </Container>

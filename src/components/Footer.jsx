@@ -26,6 +26,12 @@ justify-content: space-between;
 flex-wrap: wrap;
 ul{
     list-style: none;
+    li{
+      font-size: 1.2rem;
+      a{
+        font-size: 1.4rem;
+      }
+    }
 }
 @media (min-width: 900px){
   ul{

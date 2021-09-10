@@ -44,7 +44,7 @@ margin-bottom: 50px;
 
 
 const languages = ["HTML", "CSS", "SASS", "LESS", "JavaScript", "REACT", "NextJs", "Gatsby", "WEBPACK", "JEST", "FullStack", "Travis Cli", "Node JS", "Mongo DB"]
-const Projects =() =>{
+const Projects =({title, Skills}) =>{
     const [item, setItem] = useState({
         "HTML": false,
         "CSS": false, 
@@ -95,13 +95,13 @@ const Projects =() =>{
 `
     return(
         <Cotainer ref={ref}>
-            <h2>Projects</h2>
+            <h2>{title}</h2>
             <ButtonProject>
               <button
               onClick={()=>setGalery(!galery)}
               >{galery ?<AiOutlineBars/> : <BsFillGrid3X3GapFill/> }</button>
             </ButtonProject>
-            <p>My Skills</p>
+            <p>{Skills}</p>
             <Div>
             {languages.map(items => (       
                   <ButtonSelect name={items} item={item}/>

@@ -125,7 +125,7 @@ div{
             activeClassName="activePage"
             >Home</Link>
             <Link 
-            to='/AboutMe'
+            to='/AboutMePage'
             activeClassName="activePage"
             >About Me</Link>
             <Link 
