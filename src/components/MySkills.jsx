@@ -25,16 +25,19 @@ div{
 const MySkills = () => {
     const Container= useStaticQuery(graphql`
     query{
-        allDatoCmsTecnology{
-          nodes{
-            name,
-            nivel,
-            image {
-              url
-            }
-          }
-        }
+  allDatoCmsTecnology {
+    nodes {
+      name
+      nivel{
+        url
       }
+      image{
+        url
+      }
+    }
+  }
+}
+
     `)
 
     console.log('Container ', Container.allDatoCmsTecnology.nodes)
