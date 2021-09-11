@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Button} from '../styles/components/ButtonSelect'
 
-const ButtonSelect = ({name, setDataContainer}) =>{
+const ButtonSelect = ({name, data, dataSelect, setDataSelect}) =>{
+    const handleClick = async (e) => {
+      await setDataSelect(data.filter(item=>item.skills.includes(e.target.name)))
+      console.log(dataSelect)
+    }
 
     return(
         <Button
@@ -9,8 +13,8 @@ const ButtonSelect = ({name, setDataContainer}) =>{
         value={name}
         name={name}
         onClick={(e)=>{
-            /* handleClick(e), */
-            setDataContainer(e.target.value)
+            handleClick(e)
+            //setDataContainer(e.target.value)
           }}
         />
     )

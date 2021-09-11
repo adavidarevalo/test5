@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import ImageRow from "./ImageRow"
+import React from "react"
 import ImageContainer from "./ImageContainer"
+import ImageRow from "./ImageRow"
 import styled from "@emotion/styled"
 import { keyframes } from '@emotion/react'
 import { AiOutlineBars } from "react-icons/ai";
@@ -17,7 +17,8 @@ const fadeInDown = keyframes`
   transform: none;
   }
 ` 
-const Search = ({inView, setGalery, galery, dataSelect}) =>{
+
+const ElementProjects = ({inView, setGalery, galery, elements}) => {
   const ButtonProject = styled.div`
   display: ${inView ? "block" : "none"} !important;
   button{
@@ -42,25 +43,25 @@ const Search = ({inView, setGalery, galery, dataSelect}) =>{
     }
   }
 `
-    return(
-      <>
-        <ButtonProject>
+  return(
+    <>
+    <ButtonProject>
               <button
               onClick={()=>setGalery(!galery)}
               >{galery ?<AiOutlineBars/> : <BsFillGrid3X3GapFill/> }</button>
-        </ButtonProject>
-        <div>
-        {galery 
-                ?dataSelect.map(item=>(<ImageContainer name={item}/>
-          ))
-          :dataSelect.map(item=>(<ImageRow name={item}/>
-            )) 
-           } 
-   
-        </div>
-      </>
-    )
+    </ButtonProject>
+    <div>
+              {galery 
+              ?elements.map(item=>(
+                <ImageContainer name={item}/>
+                ))
+              :elements.map(item=>(
+                <ImageRow name={item}/>
+                )) 
+            }
+    </div>
+    </>
+  )
 }
 
-export default Search
-
+export default ElementProjects

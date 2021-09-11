@@ -9,7 +9,6 @@ import Projects from '../components/Projects'
 const IndexPage = () => (
   <Layout>
     <Seo/>
-    <Spinner/>
     <Main/>
     <AboutMe/>
     <Projects title={'Projects'} Skills={'My Skills'}/>
