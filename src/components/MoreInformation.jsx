@@ -6,8 +6,8 @@ import {ContainerDiv} from '../styles/components/MoreInformation'
 const MoreInformation = () => {
         return(
                 <ContainerDiv>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dicta itaque vero optio, ratione quibusdam cupiditate tenetur! Optio libero, velit exercitationem quidem molestias inventore itaque ut omnis dolorem consequatur maiores!</p>
-                    <Link to='../CV/David-Arevalo_CV.pdf' download='David-Arevalo_CV.pdf' target="_blank">Download my CV</Link>
+                    <p>I am a talented and hardworking individual, with broad skills in Create Web Aplication. Furthermore, I am adept at handling multiple tasks on a daily basis competently and at working well under pressure. A key strength is communication; building strong relationships with people in order to deliver the best results.</p>
+                    <Link to='../CV/David-Arevalo_CV.pdf' download target="_blank">Download my CV</Link>
               </ContainerDiv>
         )
 }

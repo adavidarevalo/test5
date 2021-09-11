@@ -26,7 +26,7 @@ const ElementProjects = ({inView, setGalery, galery, elements}) => {
     border: none;
     position: fixed;
     right: 5%;
-    top: 5%;
+    bottom: 40%;
     background: #5f27bd;
     width: 50px;
     height: 50px;
@@ -40,6 +40,11 @@ const ElementProjects = ({inView, setGalery, galery, elements}) => {
     }
     svg{
         color: white;
+    }
+  }
+  @media (min-width: 900px){
+    button{
+      bottom: 27%;
     }
   }
 `

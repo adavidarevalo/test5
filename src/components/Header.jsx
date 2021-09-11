@@ -73,6 +73,7 @@ div{
     margin: 0px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
   }
   nav{
     display: none;

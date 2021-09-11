@@ -17,7 +17,7 @@ const AboutMe = ({LinkNo}) =>{
                 alt="Person and Computer"
                 />
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dicta itaque vero optio, ratione quibusdam cupiditate tenetur! Optio libero, velit exercitationem quidem molestias inventore itaque ut omnis dolorem consequatur maiores!</p>
+                <p>I am Fronent Developer autodidact, I am from Ecuador and I have 21 years old, I like to learn new Tecnologies and work whit teams of developers. I am studing Software Engeenier in the University. My hobits is the Web development and I like to play Violin.</p>
                 <table>
                     <tr>
                         <th>Languages</th>
@@ -63,3 +63,4 @@ const AboutMe = ({LinkNo}) =>{
 }
 
 export default AboutMe
+
