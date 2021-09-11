@@ -1,26 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby';
 import IconLanguage from './IconLanguage'
-import styled from '@emotion/styled'
-
-const ContainerSection = styled.section`
-h2{
-    text-align: center;
-    font-size: 2rem;
-    margin-block: 25px 50px;
-}
-div{
-    max-width: 1130px;
-    width: 80%;
-    margin: 0 auto;
-}
-@media (min-width: 900px){
-    div{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-`
+import {ContainerSection} from '../styles/components/MySkills'
 
 const MySkills = () => {
     const Container= useStaticQuery(graphql`

@@ -1,47 +1,8 @@
 import React from 'react'
-import styled from '@emotion/styled'
 import { Link } from "gatsby"
 import { AiFillFacebook,  AiFillGithub, AiFillMail} from "react-icons/ai";
+import {ContainerFooter, List} from '../styles/components/Footer'
 
-const ContainerFooter = styled.footer`
-width: 100%;
-background: #333333;
-padding: 15px 0px;
-font-family: 'Ubuntu', sans-serif;
-color: white;
-div{
-  width: 80%;
-  margin: 0 auto;
-} 
-p{
-    text-align: center;
-    margin: 0px;
-    color: white;
-}
-` 
-const List = styled.div` 
-width: 100% !important;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-ul{
-    list-style: none;
-    li{
-      font-size: 1.2rem;
-      a{
-        font-size: 1.4rem;
-      }
-    }
-}
-@media (min-width: 900px){
-  ul{
-    display: flex;
-    li:nth-child(2){
-      margin-inline: 20px;
-    }
-  }
-}
-` 
 const Footer = () => {
     //year
     var date = new Date()
@@ -51,29 +12,35 @@ const Footer = () => {
             <div>
                 <List>
                     <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Portafolio</li>
+                        <li>
+                          <Link to='/'>Home</Link>
+                          </li>
+                        <li>
+                          <Link to='/AboutMePage'>About Me</Link>
+                        </li>
+                        <li>
+                          <Link to='/Portafolio'>Portafolio</Link>
+                        </li>
                     </ul>
                     <ul>
                         <li>
-                            <Link>
+                            <Link to='https://www.facebook.com/profile.php?id=100033936226415' target='_blank'>
                               <AiFillFacebook/>
                             </Link>
                         </li>
                         <li>
-                            <Link>
+                            <Link to='https://github.com/adavidarevalo' target='_blank'>
                               <AiFillGithub/>
                             </Link>
                         </li>
-                        <li>
+                        <li to=''>
                             <Link>
                               <AiFillMail/>
                             </Link>
                         </li>
                     </ul>
                 </List>
-              <p>Copyright &#169; {year} creado por <a>David Arevalo</a></p>
+              <p>Copyright &#169; {year} created by: <a>David Arevalo</a></p>
             </div>
         </ContainerFooter>
     )

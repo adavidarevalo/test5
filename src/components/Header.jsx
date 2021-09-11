@@ -3,7 +3,6 @@ import styled from '@emotion/styled'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { keyframes } from '@emotion/react'
 import {Link} from 'gatsby'
-import { useStaticQuery, graphql } from 'gatsby';
 
 
 const fadeIn = keyframes`
@@ -62,6 +61,9 @@ div{
       text-align: center;
       display: block;
       text-decoration: none;
+      &:hover{
+        color: #c2beef;
+      }
       &.activePage{
         text-decoration: underline;
       }
@@ -80,6 +82,9 @@ div{
       text-decoration: none;
       color: white;
       font-family: 'Ubuntu', sans-serif;
+      &:hover{
+        color: #c2beef;
+      }
       &.activePage{
         text-decoration: underline;
       }
@@ -109,9 +114,9 @@ div{
           <Link 
           to='/'
           activeClassName="activePage"
-          >home</Link>
+          >Home</Link>
           <Link 
-          to='/AboutMe'
+          to='/AboutMePage'
           activeClassName="activePage"
           >About Me</Link>
           <Link 

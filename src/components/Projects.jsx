@@ -1,69 +1,53 @@
 import React, {useState, useRef} from "react"
-import styled from "@emotion/styled"
 import ImageContainer from "./ImageContainer"
 import ImageRow from "./ImageRow"
 import ButtonSelect from "./ButtonSelect"
 import { AiOutlineBars } from "react-icons/ai";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { useInView } from 'react-intersection-observer';
+import { useStaticQuery, graphql } from 'gatsby';
+import Search from './Search'
+import {Cotainer, Div} from '../styles/components/Projects'
+import styled from '@emotion/styled'
+import { keyframes } from '@emotion/react'
 
-const Cotainer = styled.div`
-h2{
-    text-align: center;
-    font-size: 2.5rem;
-    text-decoration: underline;
-    color: #3e3d3d;
-}
-p{
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-}
-div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-@media (min-width: 900px){
-div{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-}
-`
-const Div = styled.div`
-@media (min-width: 900px){
-width: 1300px;
-margin: 0 auto;
-margin-bottom: 50px;width: 1300px;
-margin: 0 auto;
-margin-bottom: 50px; 
-}
-`
-
-
+const fadeInDown = keyframes`
+0% {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  transform: none;
+  }
+` 
 
 const languages = ["HTML", "CSS", "SASS", "LESS", "JavaScript", "REACT", "NextJs", "Gatsby", "WEBPACK", "JEST", "FullStack", "Travis Cli", "Node JS", "Mongo DB"]
 const Projects =({title, Skills}) =>{
-    const [item, setItem] = useState({
-        "HTML": false,
-        "CSS": false, 
-        "SASS": false, 
-        "LESS": false, 
-        "JavaScript": false,    
-        "REACT": false, 
-        "NextJs": false,
-        "Gatsby": false,
-        "WEBPACK": false, 
-        "JEST": false
-    })
-    const handleClick = e => {
-        e.preventDefault()
-        setItem({
-            ...item,
-            [e.target.name]: true
-        })
+    const [dataContainer, setDataContainer] = useState(null)
+    //get Data from Cms
+const DataProjects = useStaticQuery(graphql`
+query{
+    allDatoCmsPortafolio{
+      nodes {
+        title
+        littleTitle
+        description
+        skills
+        computer{
+          url
+        }
+        image{
+          url
+        }
+        linkGithub
+        linkPreviewpage
+      }
+  
     }
+  }
+`)
+  
     const test = (e) => {
         console.log(e)
     }
@@ -73,10 +57,11 @@ const Projects =({title, Skills}) =>{
     /* Optional options */
     threshold: 0,
   });
-  console.log(inView)
+  
   const ButtonProject = styled.div`
   display: ${inView ? "block" : "none"} !important;
   button{
+    animation: ${fadeInDown} 1s both;
     border: none;
     position: fixed;
     right: 5%;
@@ -88,11 +73,17 @@ const Projects =({title, Skills}) =>{
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    cursor: pointer;
+    &:hover{
+      background: #431d82;
+    }
     svg{
         color: white;
     }
   }
 `
+
+console.log('asdjl;km ',DataProjects.allDatoCmsPortafolio.nodes)
     return(
         <Cotainer ref={ref}>
             <h2>{title}</h2>
@@ -104,16 +95,17 @@ const Projects =({title, Skills}) =>{
             <p>{Skills}</p>
             <Div>
             {languages.map(items => (       
-                  <ButtonSelect name={items} item={item}/>
+                  <ButtonSelect name={items} setDataContainer={setDataContainer}/>
             ))}
             </Div>
+            <Search elements={DataProjects.allDatoCmsPortafolio.nodes} dataContainer={dataContainer}/>
             <div>
               {galery 
-              ?languages.map(item=>(
-                    <ImageContainer name={item}/>
+              ?DataProjects.allDatoCmsPortafolio.nodes.map(item=>(
+                <ImageContainer name={item}/>
                 ))
-              :languages.map(item=>(
-                    <ImageRow name={item}/>
+              :DataProjects.allDatoCmsPortafolio.nodes.map(item=>(
+                <ImageRow name={item}/>
                 )) 
             }
             </div>
@@ -122,3 +114,4 @@ const Projects =({title, Skills}) =>{
 }
 
 export default Projects
+

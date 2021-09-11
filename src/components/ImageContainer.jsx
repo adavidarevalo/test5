@@ -1,43 +1,38 @@
 import React from "react"
-import styled from '@emotion/styled'
-import { keyframes } from "@emotion/react"
-const fadeIn = keyframes`
-0% {opacity: 0;}
-100% {opacity: 1;}
-`
+import {Link} from 'gatsby'
+import { AiOutlineFullscreen, AiFillGithub, AiOutlineFileText } from "react-icons/ai";
+import ModalContainer from './ModalContainer';
+import {Container} from '../styles/components/ImageContainer'
 
-
-
-const Container = styled.div`
-display: flex;
-flex-direction: column;
-width: auto !important;
-div{
-    display: none;
-    position: absolute;
-    background: #333333;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    animation-name: ${fadeIn};
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-&:hover{
-    div{
-        display: block;
-    }
-}
-`
 
 const ImageContainer = ({name}) =>{
+    
+    const {title, littleTitle, computer, linkPreviewpage, linkGithub, image, description} = name
+    //modal
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+
+    function openModal() {
+      setIsOpen(true);
+    }
+
+    function closeModal() {
+      setIsOpen(false);
+    }
     return(
         <Container>
-            <img src="https://i.ibb.co/rs9jtSs/mac.png"/>
-            <p>{name}</p>
+            <img src={computer.url}/>
+            <p>{title}</p>
             <div>
-                <p>text</p>
+                <h3>{title}</h3>
+                <p>{littleTitle}</p>
+                <Link to={linkPreviewpage} target='_blank'>Preview Page <AiOutlineFileText/></Link>
+                <Link to={linkGithub} target='_blank'>View Code <AiFillGithub/></Link>
+                <button onClick={openModal} >Read More <AiOutlineFullscreen/></button>
             </div>
+            <ModalContainer 
+            data={name} 
+            modalIsOpen={modalIsOpen} 
+            closeModal={closeModal}/>
         </Container>
     )
 }
