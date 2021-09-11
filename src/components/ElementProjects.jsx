@@ -26,7 +26,7 @@ const ElementProjects = ({inView, setGalery, galery, elements}) => {
     border: none;
     position: fixed;
     right: 5%;
-    bottom: 5%;
+    top: 5%;
     background: #5f27bd;
     width: 50px;
     height: 50px;

@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import { AiOutlineFullscreen, AiFillGithub, AiOutlineFileText } from "react-icons/ai";
 import ModalContainer from './ModalContainer';
 import {Container} from '../styles/components/ImageContainer'
+import LazyLoad from 'react-lazyload';
 
 
 const ImageContainer = ({name}) =>{
@@ -19,6 +20,7 @@ const ImageContainer = ({name}) =>{
       setIsOpen(false);
     }
     return(
+      <LazyLoad height={200} once >
         <Container>
             <img src={computer.url}/>
             <p>{title}</p>
@@ -34,6 +36,7 @@ const ImageContainer = ({name}) =>{
             modalIsOpen={modalIsOpen} 
             closeModal={closeModal}/>
         </Container>
+      </LazyLoad>
     )
 }
 

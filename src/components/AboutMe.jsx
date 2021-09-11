@@ -3,11 +3,14 @@ import person from "../images/person.png"
 import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "gatsby"
 import {Container, ContainerDiv} from '../styles/components/AboutMe'
+import LazyLoad from 'react-lazyload';
+
 
 const AboutMe = ({LinkNo}) =>{
     return(
+        <LazyLoad height={200} once >
         <Container>
-                        <h2>About Me</h2>
+            <h2>About Me</h2>
             <ContainerDiv>
             <img
                 src={person}
@@ -55,6 +58,7 @@ const AboutMe = ({LinkNo}) =>{
             </div>
           </ContainerDiv>
         </Container>
+        </LazyLoad>
     )
 }
 

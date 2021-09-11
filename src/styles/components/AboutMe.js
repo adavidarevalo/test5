@@ -41,10 +41,10 @@ align-items: center;
 img{
     margin-top: 25px;
     width: 80%;
-    animation: ${fadeInRight} 1s both;
+    animation: ${fadeInLeft} 1s both;
 }
 div{
-    animation: ${fadeInLeft} 1s both;
+    animation: ${fadeInRight} 1s both;
     table, p{
         width: 80%;
         margin: 0 auto;

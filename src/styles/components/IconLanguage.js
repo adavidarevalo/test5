@@ -1,6 +1,13 @@
 import styled from '@emotion/styled'
+import { keyframes } from "@emotion/react"
+
+const fadeIn = keyframes`
+0% {opacity: 0;}
+100% {opacity: 1;}
+`
 
 export const Container = styled.div`
+animation: ${fadeIn} 1s both;
 max-width: 450px ;
 display: flex;
 flex-direction: column;

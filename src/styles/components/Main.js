@@ -147,7 +147,9 @@ export const Type = styled.h2`
   }
   
   &::before {
-  background: linear-gradient(90deg, rgba(69,16,138,1) 0%, rgba(61,6,95,1) 38%, rgba(32,5,84,1) 100%);
+  background: rgb(67,14,129);
+  background: linear-gradient(90deg, rgba(67,14,129,1) 0%, rgba(61,6,95,1) 38%, rgba(35,5,85,1) 100%);
+
   animation: ${typewriter} 6s steps(36) 1s forwards;
   }
   
@@ -155,5 +157,10 @@ export const Type = styled.h2`
   width: 0.125em;
   background: white;
   animation: ${typewriter} 6s steps(36) 1s forwards, ${blink} 750ms steps(36) infinite;
+  }
+  @media (min-width: 900px){
+    &::before {
+      background: linear-gradient(90deg, rgba(67,13,124,1) 0%, rgba(61,7,97,1) 100%);
+      }   
   }
 `

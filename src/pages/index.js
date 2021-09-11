@@ -6,13 +6,16 @@ import Main from '../components/Main'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 
-const IndexPage = () => (
-  <Layout>
-    <Seo/>
-    <Main/>
-    <AboutMe/>
-    <Projects title={'Projects'} Skills={'My Skills'}/>
-  </Layout>
-)
+
+const IndexPage = () =>{
+  return(
+    <Layout>
+      <Seo/>
+      <Main/>
+      <AboutMe/>
+      <Projects title={'Projects'} Skills={'My Skills'}/>
+    </Layout>
+  )
+} 
 
 export default IndexPage

@@ -11,7 +11,7 @@ import ElementProjects from "./ElementProjects"
 
 
 
-const languages = ["HTML", "CSS", "SASS", "LESS", "JavaScript", "REACT", "NextJs", "Gatsby", "WEBPACK", "JEST", "FullStack", "Travis Cli", "Node JS", "Mongo DB"]
+const languages = ["HTML", "CSS", "SASS", "LESS", "JAVASCRIPT", "REACT", "NEXTJS", "GATSBY", "WEBPACK", "JEST", "FULLSTACK", "TRAVIS CLI", "NODE JS", "MONGO DB", "ALL PROJECTS", "GRAPHQL"]
 const Projects =({title, Skills}) =>{
   //Search TI
   const [dataSelect, setDataSelect] = useState(null)
@@ -19,31 +19,32 @@ const Projects =({title, Skills}) =>{
 
 
     //get Data from Cms
-const DataProjects = useStaticQuery(graphql`
-query{
-    allDatoCmsPortafolio{
-      nodes {
-        title
-        littleTitle
-        description
-        skills
-        computer{
-          url
+  const DataProjects = useStaticQuery(graphql`
+  query{
+      allDatoCmsPortafolio{
+        nodes {
+          title
+          littleTitle
+          description
+          skills
+          computer{
+            url
+          }
+          image{
+            url
+          }
+          linkGithub
+          linkPreviewpage
         }
-        image{
-          url
-        }
-        linkGithub
-        linkPreviewpage
+    
       }
-  
     }
-  }
-`)
-  
-    const [galery, setGalery] = useState(false)
+  `)
 
-    const { ref, inView, entry } = useInView({
+  
+  const [galery, setGalery] = useState(false)
+
+  const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0,
   });
