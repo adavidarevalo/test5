@@ -1,6 +1,4 @@
-import React, {useState, useRef} from "react"
-import ImageContainer from "./ImageContainer"
-import ImageRow from "./ImageRow"
+import React, {useState} from "react"
 import ButtonSelect from "./ButtonSelect"
 import { useInView } from 'react-intersection-observer';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -11,7 +9,7 @@ import ElementProjects from "./ElementProjects"
 
 
 
-const languages = ["HTML", "CSS", "SASS", "LESS", "JAVASCRIPT", "REACT", "NEXTJS", "GATSBY", "WEBPACK", "JEST", "FULLSTACK", "TRAVIS CLI", "NODE JS", "MONGO DB", "ALL PROJECTS", "GRAPHQL"]
+const languages = ["HTML", "CSS", "SASS", "LESS", "JAVASCRIPT", "REACT", "NEXT JS", "GATSBY", "WEBPACK", "JEST", "FULLSTACK", "NODE JS", "MONGO DB", "ALL PROJECTS", "GRAPH QL"]
 const Projects =({title, Skills}) =>{
   //Search TI
   const [dataSelect, setDataSelect] = useState(null)

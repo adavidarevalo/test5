@@ -72,7 +72,7 @@ div:nth-child(9) {
 
 export const Container = styled.section`
 width: 100%;
-height: 100vh;
+height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
