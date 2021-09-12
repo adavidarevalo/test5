@@ -5,6 +5,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import Footer from './Footer.jsx'
 import "./layout.css"
+import favicon from '../images/favicon.png'
+import Helmet from 'react-helmet'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +21,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
           <main>{children}</main>
       <Footer/>

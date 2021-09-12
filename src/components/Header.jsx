@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { keyframes } from '@emotion/react'
 import {Link} from 'gatsby'
+import logo from "../images/logo.png"
 
 
 const fadeIn = keyframes`
@@ -69,12 +70,7 @@ div{
       }
     }
   }
-  p{
-    margin: 0px;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 900;
-  }
+
   nav{
     display: none;
     a{
@@ -103,10 +99,30 @@ div{
   }
 }
 `
+  const LogoContainer = styled(Link)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px !important;
+    text-decoration: none;
+    p{
+    margin: 0px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+  }
+  img{
+        width: 50px;
+        margin: 0px 10px;
+  }
+  `
   return(
     <ContainerHeader>
       <div>
-        <p>David</p>
+        <LogoContainer to="/">
+          <img src={logo} alt="Logo"/>
+          <p>David</p>
+        </LogoContainer>
         {menu 
         ? <AiOutlineMenu onClick={()=> setMenu(false)}/> 
         : < AiOutlineClose onClick={()=> setMenu(true)}/>
