@@ -13,13 +13,13 @@ const Footer = () => {
                 <List>
                     <ul>
                         <li>
-                          <Link to='/'>Home</Link>
+                          <Link to='#/'>Home</Link>
                           </li>
                         <li>
                           <Link to='/AboutMePage'>About Me</Link>
                         </li>
                         <li>
-                          <Link to='/Portafolio'>Portafolio</Link>
+                          <Link to='/Portafolio'>Portfolio</Link>
                         </li>
                     </ul>
                     <ul>

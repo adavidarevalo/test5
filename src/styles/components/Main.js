@@ -105,13 +105,7 @@ to {
   background: transparent;
   }
 `
-const fadeInUp = keyframes`
-to {
-  opacity: 1;
-  transform: translateY(0);
-  }
-`
-  
+
 
 export const Div = styled.div`
 @media (min-width: 900px){

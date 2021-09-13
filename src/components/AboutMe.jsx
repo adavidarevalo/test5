@@ -17,7 +17,7 @@ const AboutMe = ({LinkNo}) =>{
                 alt="Person and Computer"
                 />
             <div>
-                <p>I am Fronent Developer autodidact, I am from Ecuador and I have 21 years old, I like to learn new Tecnologies and work whit teams of developers. I am studing Software Engeenier in the University. My hobits is the Web development and I like to play Violin.</p>
+                <p>I am Front - End Developer autodidact, I am from Ecuador and I have 21 years old, I like to learn new Technologies and work whit teams of developers. I am studying Software Engineer at the University. My hobbies are the Web developer and I like to play the Violin.</p>
                 <table>
                     <tr>
                         <th>Languages</th>
@@ -44,7 +44,7 @@ const AboutMe = ({LinkNo}) =>{
                         </td>
                     </tr>
                     <tr>
-                        <td>Portugues</td>
+                        <td>Portuguese</td>
                         <td>
                             <AiFillStar/>
                             <AiFillStar/>

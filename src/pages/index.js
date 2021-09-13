@@ -1,5 +1,4 @@
 import * as React from "react"
-import Spinner from '../components/Spinner'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Main from '../components/Main'

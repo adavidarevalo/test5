@@ -44,7 +44,7 @@ div{
   }
   ul{
     position: absolute;
-    top: 45px;
+    top: 65px;
     width: 100%;
     background: #333333;
     padding: 10px;
@@ -139,7 +139,7 @@ div{
           <Link 
           to='/Portafolio'
           activeClassName="activePage"
-          >Portafolio</Link>
+          >Portfolio</Link>
         </ul>
         <nav>
             <Link 
@@ -153,7 +153,7 @@ div{
             <Link 
             to='/Portafolio'
             activeClassName="activePage"
-            >Portafolio</Link>
+            >Portfolio</Link>
         </nav>
       </div>
     </ContainerHeader>

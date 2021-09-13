@@ -8,7 +8,7 @@ import LazyLoad from 'react-lazyload';
 
 const ImageContainer = ({name}) =>{
     
-    const {title, littleTitle, computer, linkPreviewpage, linkGithub, image, description} = name
+    const {title, littleTitle, computer, linkPreviewpage, linkGithub, } = name
     //modal
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -20,9 +20,9 @@ const ImageContainer = ({name}) =>{
       setIsOpen(false);
     }
     return(
-      <LazyLoad height={200} once >
+      <LazyLoad height={200} once>
         <Container>
-            <img src={computer.url}/>
+            <img src={computer.url} alt={title}/>
             <p>{title}</p>
             <div>
                 <h3>{title}</h3>

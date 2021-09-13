@@ -21,7 +21,7 @@ const ImageRow= ({name}) =>{
     return(
       <LazyLoad height={200} once >
         <Container>
-            <img src={computer.url}/>
+            <img src={computer.url} alt={title}/>
             <div>
                 <h2>{title}</h2>
                 <p>{littleTitle}</p>

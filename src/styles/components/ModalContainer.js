@@ -31,6 +31,8 @@ div{
         font-family: 'Ubuntu', sans-serif;
         max-width: 500px;
        text-align: center;
+       width: 80%;
+       margin: 10px auto;
     }
     a{
         display: flex;

@@ -28,7 +28,7 @@ const ModalContainer = ({data, modalIsOpen, closeModal}) => {
               style={customStyles}
              >
                 <ModalSection>
-                  <button onClick={closeModal}><AiFillCloseCircle/></button>
+                  <button onClick={closeModal} aria-label="Close Modal"><AiFillCloseCircle/></button>
                   <img src={image.url} alt={title}/>
                   <div>
                     <h2>{title}</h2>

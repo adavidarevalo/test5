@@ -11,7 +11,7 @@ const Portafolio = () => {
     return(
         <Layout>
             <Container>
-               <Projects title={'My Portafolio'} NotSkills={'no baby'}/>
+               <Projects title={'My Portfolio'} NotSkills={'no baby'}/>
             </Container>
         </Layout>
     )

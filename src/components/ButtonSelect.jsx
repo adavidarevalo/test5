@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Button} from '../styles/components/ButtonSelect'
 
 const ButtonSelect = ({name, data, dataSelect, setDataSelect}) =>{

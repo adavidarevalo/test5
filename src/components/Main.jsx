@@ -13,7 +13,7 @@ const Main = () => {
             <Div>
               <div>
                   <Type>David Arevalo</Type>
-                <p>Front-End</p>
+                <p>Front - End</p>
                 <p>Developer</p>
               </div>
             </Div>
