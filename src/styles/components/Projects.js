@@ -25,11 +25,12 @@ div{
 }
 `
 export const Div = styled.div`
+margin-bottom: 60px; 
 @media (min-width: 900px){
 width: 1300px;
 margin: 0 auto;
 margin-bottom: 50px;width: 1300px;
 margin: 0 auto;
-margin-bottom: 50px; 
+margin-top: 20px;
 }
 `
