@@ -57,6 +57,7 @@ div{
     z-index: 1000;
     ${menu && "display: none;"}
     a{
+      margin-bottom: 10px;
       color: white;
       font-family: 'Ubuntu', sans-serif;
       text-align: center;

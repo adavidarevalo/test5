@@ -31,6 +31,11 @@ div{
 @media (min-width: 900px){
     display: grid !important;
     grid-template-columns: 1fr 2fr;
+    div{
+        h2{
+            text-align: center;
+        }
+    }
 }
 `
 
@@ -55,6 +60,7 @@ a, button{
     cursor: pointer;
     text-decoration: none;
     border: none;
+    margin-inline: 10px;
     &:hover{
         background: #431d82;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
