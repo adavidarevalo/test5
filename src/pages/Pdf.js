@@ -1,4 +1,5 @@
 import React from 'react';
+import MyCv from '../fileDownload/MyCv.pdf'
 
 const Pdf = () => {
 
@@ -9,7 +10,7 @@ const Pdf = () => {
     return (
         <div style={{position: 'absolute', width: '100%', height: '100%'}}>
             <object
-            data={require('../CV/David-Arevalo_CV.pdf')}
+            data={MyCv}
             type="application/pdf"
             width="100%"
             height="100%"
