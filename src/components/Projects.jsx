@@ -53,7 +53,6 @@ console.log('asdjl;km ',DataProjects.allDatoCmsPortafolio.nodes)
     return(
         <Cotainer ref={ref}>
             <h2>{title}</h2>
-    
             <p>{Skills}</p>
             <Div>
             {languages.map(items => (       

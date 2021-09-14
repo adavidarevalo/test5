@@ -8,6 +8,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+min-height: 75vh;
 img{
     width: 100%;
     max-width: 350px;

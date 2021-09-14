@@ -1,26 +1,34 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import MyCv from '../fileDownload/MyCv.pdf'
+import Layout from "../components/layout"
+import { AiOutlineCloudDownload } from "react-icons/ai";
+import {Container} from '../styles/components/Pdf'
 
 const Pdf = () => {
-
-/*     if(typeof window.orientation !== "undefined"){
-        document.getElementById('enlaceDescargarPdf').click();
-        window.close();
-    } */
+    useEffect(() => {
+        if(typeof window.orientation !== "undefined"){
+            document.getElementById('enlaceDescargarPdf').click();
+            window.close();
+        } 
+    }, [])
     return (
-        <div style={{position: 'absolute', width: '100%', height: '100%'}}>
+        <Layout>
+        <Container>
             <object
             data={MyCv}
             type="application/pdf"
             width="100%"
             height="100%"
             >
-               {/*  <br />
-                <a href={require('../CV/DavidCv.pdf')} id="enlaceDescargarPdf"
-                download="ReactJS.pdf"
-                >Tu dispositivo no puede visualizar los PDF, da click aquí para descargarlo</a> */}
+                <div>
+                    <img src='https://www.programando.org/blog/2021/06/28/el-camino-del-backend-developer-lenguajes-formales/featured.png' alr='Frontend Developer'/>
+                  <a href={MyCv} id="enlaceDescargarPdf"
+                  download="David-Arevalo-CV.pdf"
+                  >Your device cannot view pdf, Downloading Automatically. <AiOutlineCloudDownload/></a> 
+                </div>
             </object>
-        </div>
+        </Container>
+        </Layout>
     );
 }
 

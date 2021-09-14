@@ -11,6 +11,11 @@ p{
     margin-block: 25px;
     font-family: 'Ubuntu', sans-serif;
 }
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 a{
     background: #5f27bd;
     color: white;
@@ -23,6 +28,13 @@ a{
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-inline: 10px;
+    margin-top: 10px;
+    svg{
+        margin-left: 1px;
+    }
     &:hover{
         background: #431d82;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
