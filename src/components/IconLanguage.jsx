@@ -11,7 +11,7 @@ const IconLanguage = ({data}) => {
             <img src={image.url} alt={name}/>
             <div>
                 <h3>{name}</h3>
-                <p>Nivel: <img src={nivel.url} alt={name}/></p>
+                <p>Level: <img src={nivel.url} alt={name}/></p>
             </div>
             </LazyLoad>
         </Container>
