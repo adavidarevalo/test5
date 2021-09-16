@@ -17,7 +17,7 @@ const AboutMe = ({LinkNo}) =>{
                 alt="Person and Computer"
                 />
             <div>
-                <p>I am Frontend Developer self-taught, from Ecuador and I am 21 years old, I like to learn new Technologies and work with teams of developers. I am studying Software Engineering at the University. My hobbies are create the Web applicationand play the Violin.</p>
+                <p>I am a Frontend Developer self-educated, from Ecuador and I am 21 years old, I like to learn new Technologies and work with teams of developers. I am studying Software Engineering at the University. My hobbies are creating web applications and to play Violin.</p>
                 <table>
                     <tr>
                         <th>Languages</th>
