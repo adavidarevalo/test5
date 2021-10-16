@@ -17,8 +17,8 @@ flex-direction: column;
 width: auto !important;
 max-width: 550px;
 position: relative;
+cursor: pointer;
 div{
-    display: none;
     position: absolute;
     background: #333333;
     width: 100%;
@@ -28,6 +28,7 @@ div{
     position: absolute;
     top: -50px;
     padding: 20px;
+    display: none;
     h3{
         text-align: center;
         color: white;

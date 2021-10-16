@@ -11,6 +11,9 @@ animation: ${fadeIn} 1s both;
 border-bottom: 1px solid gray;
 width: 80%;
 margin-bottom: 40px;
+img{
+  width: 90%;
+}
 div{
     margin: 0px;
     flex-direction: column;
@@ -30,7 +33,7 @@ div{
 }
 @media (min-width: 900px){
     display: grid !important;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 300px 2fr;
     div{
         h2{
             text-align: center;

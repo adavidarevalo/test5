@@ -12,6 +12,7 @@ font-weight: 600;
 letter-spacing: 2px;
 text-align: center;
 font-family: 'Ubuntu', sans-serif;
+cursor: pointer;
 &:active,
 &:hover{
     background: #5f27bd;

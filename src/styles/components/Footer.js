@@ -44,9 +44,14 @@ ul{
 @media (min-width: 900px){
   ul{
     display: flex;
+    justify-content: space-between;
+    width: 215px;
     li:nth-child(2){
       margin-inline: 20px;
     }
   }
 }
+  .NavLinks{
+    width: 300px;
+  }
 ` 
