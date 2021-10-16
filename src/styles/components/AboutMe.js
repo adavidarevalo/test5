@@ -72,7 +72,7 @@ div{
         tr{
             td{
                 svg{
-                    color: yellow;
+                    color: #5C3391;
                 }
                 .ColorGray{
                     color: #676666 !important;

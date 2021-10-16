@@ -2,10 +2,15 @@ import styled from '@emotion/styled'
 import { keyframes } from "@emotion/react"
 
 const fadeIn = keyframes`
-0% {opacity: 0;}
-100% {opacity: 1;}
+0% {
+    opacity: 0;
+    transform: scale(1.05);
+}
+100% {
+    opacity: 1;
+    transform: scale(1);
+}
 `
-
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -19,7 +24,7 @@ div{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    animation: ${fadeIn} 1s both;
+    animation: ${fadeIn} .5s both;
     position: absolute;
     top: -50px;
     padding: 20px;

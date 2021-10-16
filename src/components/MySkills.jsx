@@ -20,8 +20,6 @@ const MySkills = () => {
 }
 
     `)
-
-    console.log('Container ', Container.allDatoCmsTecnology.nodes)
     return(
         <ContainerSection>
             <h2>My Skills</h2>

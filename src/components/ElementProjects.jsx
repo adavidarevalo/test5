@@ -35,6 +35,7 @@ const ElementProjects = ({inView, setGalery, galery, elements}) => {
     align-items: center;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 10000;
     &:hover{
       background: #431d82;
     }

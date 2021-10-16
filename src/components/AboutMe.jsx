@@ -39,7 +39,7 @@ const AboutMe = ({LinkNo}) =>{
                             <AiFillStar/>
                             <AiFillStar/>
                             <AiFillStar/>
-                            <AiFillStar className='ColorGray'/>
+                            <AiFillStar/>
                             <AiFillStar className='ColorGray'/>
                         </td>
                     </tr>

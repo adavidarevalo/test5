@@ -9,12 +9,10 @@ import ElementProjects from "./ElementProjects"
 
 
 
-const languages = ["HTML", "CSS", "SASS", "LESS", "JAVASCRIPT", "REACT", "NEXT JS", "GATSBY", "WEBPACK",  "FULLSTACK", "NODE JS", "MONGO DB", "ALL PROJECTS", "GRAPH QL"]
+const languages = ["HTML", "CSS", "SASS", "LESS", "JAVASCRIPT", "REACT", "NEXT JS", "GATSBY", "WEBPACK",  "FULLSTACK", "NODE JS", "MONGO DB", "ALL PROJECTS", "GRAPH QL", "ANGULAR"]
 const Projects =({title, Skills}) =>{
   //Search TI
   const [dataSelect, setDataSelect] = useState(null)
-
-
 
     //get Data from Cms
   const DataProjects = useStaticQuery(graphql`

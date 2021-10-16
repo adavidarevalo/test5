@@ -16,7 +16,3 @@ const MoreInformation = () => {
         )
 }
 export default MoreInformation
-
-//https://docdro.id/bXyWXQA
-
-
