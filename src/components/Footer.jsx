@@ -34,7 +34,6 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                        <a href='mailto:kjcoco13@gmail.com'>Your text</a>
                             <a target="_blank" href='mailto:davidarevaloc20@gmail.com'>
                               <AiFillMail/>
                             </a>
