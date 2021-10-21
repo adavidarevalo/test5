@@ -91,19 +91,9 @@ img{
   }
   div{
         grid-row: 1;
-        width: 300px;
+        min-width: 350px;
   }
 }
-`
-const typewriter = keyframes`
-to {
-  left: 100%;
-  }
-`
-const blink = keyframes`
-to {
-  background: transparent;
-  }
 `
 
 
@@ -125,36 +115,14 @@ export const Div = styled.div`
 }
 `
 
-export const Type = styled.h2`
-  font-size: 2.5rem;
-  position: relative;
-  font-family: 'Ubuntu', sans-serif;
-  position: relative;
-  width: max-content;
-  &::before, &::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  }
-  
-  &::before {
-  background: rgb(67,14,129);
-  background: linear-gradient(90deg, rgba(67,14,129,1) 0%, rgba(61,6,95,1) 38%, rgba(35,5,85,1) 100%);
-
-  animation: ${typewriter} 6s steps(36) 1s forwards;
-  }
-  
-  &::after {
-  width: 0.125em;
-  background: white;
-  animation: ${typewriter} 6s steps(36) 1s forwards, ${blink} 750ms steps(36) infinite;
-  }
-  @media (min-width: 900px){
-    &::before {
-      background: linear-gradient(90deg, rgba(67,13,124,1) 0%, rgba(61,7,97,1) 100%);
-      }   
-  }
+export const TypeContainer = styled.span`
+font-size: 2.5rem;
+color: white;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 600;
+text-decoration: underline;
+text-align: center;
+margin-top: 15px;
+opacity: .9;
+letter-spacing: 3px;
 `

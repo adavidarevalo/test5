@@ -20,7 +20,7 @@ position: relative;
 cursor: pointer;
 div{
     position: absolute;
-    background: #333333;
+    background: #1e1e1ef7;
     width: 100%;
     height: 100%;
     border-radius: 5px;

@@ -1,6 +1,7 @@
 import React from "react"
 import sombras from "../images/sombras.png"
-import {Div, Type, ContainerDiv, Container} from '../styles/components/Main'
+import {Div, ContainerDiv, Container, TypeContainer} from '../styles/components/Main'
+import { Typewriter } from 'react-simple-typewriter'
 
 const Main = () => {
     return(
@@ -12,7 +13,14 @@ const Main = () => {
                   />
             <Div>
               <div>
-                  <Type>David Arevalo</Type>
+                  <TypeContainer>
+                    <Typewriter
+                      words={['David Arevalo']}
+                      cursor
+                      cursorStyle='|'
+                      typeSpeed={400}
+                    />
+                  </TypeContainer>
                 <p>Front - End</p>
                 <p>Developer</p>
               </div>
