@@ -29,6 +29,7 @@ div{
     top: -50px;
     padding: 20px;
     display: none;
+    z-index: 200;
     h3{
         text-align: center;
         color: white;

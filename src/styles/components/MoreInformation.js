@@ -37,7 +37,7 @@ a{
     }
     &:hover{
         background: #431d82;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.2);
     }
 }
 `

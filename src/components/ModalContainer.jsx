@@ -7,7 +7,8 @@ import {ModalSection} from '../styles/components/ModalContainer'
 
 const customStyles = {
     overlay: {
-        background: 'rgba(0, 0, 0, 0.75)'
+        background: 'rgba(0, 0, 0, 0.75)',
+        zIndex: "400"
       },
     content: {
       top: '50%',

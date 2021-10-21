@@ -22,7 +22,7 @@ const Footer = () => {
                           <Link to='/Portafolio'>Portfolio</Link>
                         </li>
                     </ul>
-                    <ul>
+                    <ul className="SocialContainer">
                         <li>
                             <Link to='https://www.facebook.com/profile.php?id=100033936226415' target='_blank'>
                               <AiFillFacebook/>
@@ -34,9 +34,10 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="mailto:davidarevaloc20@gmail.com" target="_blank">
+                        <a href='mailto:kjcoco13@gmail.com'>Your text</a>
+                            <a target="_blank" href='mailto:davidarevaloc20@gmail.com'>
                               <AiFillMail/>
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <Link to="https://api.whatsapp.com/send?phone=+593995402222" rel="nofollow ugc"     target="_blank">

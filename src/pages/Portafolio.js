@@ -5,13 +5,15 @@ import styled from '@emotion/styled'
 
 const Container = styled.section`
 margin-top: 35px;
+min-height: 81vh;
 `
 
 const Portafolio = () => {
     return(
         <Layout>
             <Container>
-               <Projects title={'My Portfolio'} NotSkills={'no baby'}/>
+                    <Projects 
+                    title={'My Portfolio'} NotSkills={'no baby'}/>
             </Container>
         </Layout>
     )

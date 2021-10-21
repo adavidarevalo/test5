@@ -4,6 +4,7 @@ export const ModalSection = styled.section`
 display: flex;
 flex-direction: column;
 align-items: center;
+z-index: 300;
 button{
     background: none;
     border: none;

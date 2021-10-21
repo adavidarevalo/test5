@@ -41,6 +41,17 @@ ul{
       }
     }
 }
+@media (max-width: 460px){
+  ul{
+    text-align: center;
+  }
+  .SocialContainer{
+    display: flex;
+    width: 200px;
+    margin: 0px auto 20px;
+    justify-content: space-around;
+  }
+}
 @media (min-width: 900px){
   ul{
     display: flex;

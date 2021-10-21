@@ -35,7 +35,7 @@ background: linear-gradient(90deg, rgba(69,16,138,1) 0%, rgba(61,6,95,1) 38%, rg
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 93.7vh;
+    min-height: 94.4vh;
 }
 `
 

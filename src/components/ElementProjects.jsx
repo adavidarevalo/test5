@@ -35,7 +35,7 @@ const ElementProjects = ({inView, setGalery, galery, elements}) => {
     align-items: center;
     border-radius: 50px;
     cursor: pointer;
-    z-index: 10000;
+    z-index: 100;
     &:hover{
       background: #431d82;
     }
@@ -49,6 +49,9 @@ const ElementProjects = ({inView, setGalery, galery, elements}) => {
     }
   }
 `
+const ElementContainer = styled.div`
+  max-width: 600px;
+`
   return(
     <>
     <ButtonProject>
@@ -59,10 +62,12 @@ const ElementProjects = ({inView, setGalery, galery, elements}) => {
     <div>
               {galery 
               ?elements.map(item=>(
+                <ElementContainer>
                 <ImageContainer name={item}/>
+                </ElementContainer>
                 ))
               :elements.map(item=>(
-                <ImageRow name={item}/>
+                <ImageRow calssName="NoMAx" name={item}/>
                 )) 
             }
     </div>
