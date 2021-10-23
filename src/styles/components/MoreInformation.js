@@ -22,7 +22,7 @@ a{
     width: 280px;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -30,8 +30,10 @@ a{
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-inline: 10px;
     margin-top: 10px;
+    border: 1px solid white;
     svg{
         margin-left: 1px;
     }
