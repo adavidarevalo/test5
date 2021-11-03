@@ -49,6 +49,8 @@ img{
   max-width: 530px;
   margin-top: 40px;
   animation: ${fadeInRight} 1s both;
+  min-width: 255px;
+  min-height: 230px;
 }
 div{
   animation: ${fadeInLeft} 1s both;

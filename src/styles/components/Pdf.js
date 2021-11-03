@@ -4,7 +4,9 @@ import styled from '@emotion/styled'
 export const Container = styled.div`
 position: absolute;
 width: 100%;
-height: 94.5%;
+height: 90%;
+background: #323639;
+overflow: hidden;
 div{
     background: white;
     min-height: 38vh;

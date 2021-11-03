@@ -10,6 +10,10 @@ function Seo({ description, lang, meta, title }) {
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet"/>
+      <meta name="description" content="David Arevalo potfolio, About FrontEnd"></meta>
+      <meta name="keywords" content="Web Developer, David Arevalo, FrontEnd"/>
+      <meta name="author" content="David Arevalo" />
+      <meta name="copyright" content="David Arevalo copyright" />
       <title>David Portfolio</title>
     </Helmet>
   )

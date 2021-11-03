@@ -13,14 +13,17 @@ width: 80%;
 margin-bottom: 40px;
 img{
   width: 90%;
+  max-width: 400px;
+  min-height: 140px;
+  min-width: 230px;
 }
 div{
     margin: 0px;
     flex-direction: column;
     h2{
         margin: 0px;
-        text-align: inherit;
         font-size: 1.6rem;
+        text-align: center;
     }
     p{
         margin-block: 10px;
@@ -31,14 +34,9 @@ div{
     border-bottom: none;
     margin-bottom: 50px;
 }
-@media (min-width: 900px){
+@media (min-width: 1030px){
     display: grid !important;
     grid-template-columns: 300px 2fr;
-    div{
-        h2{
-            text-align: center;
-        }
-    }
 }
 `
 

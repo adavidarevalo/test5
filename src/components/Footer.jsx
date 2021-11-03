@@ -19,7 +19,7 @@ const Footer = () => {
                           <Link to='/AboutMePage'>About Me</Link>
                         </li>
                         <li>
-                          <Link to='/Portafolio'>Portfolio</Link>
+                          <Link to='/Portafolio'>Projects</Link>
                         </li>
                     </ul>
                     <ul className="SocialContainer">

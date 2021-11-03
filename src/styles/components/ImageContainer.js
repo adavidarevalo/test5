@@ -18,9 +18,13 @@ width: auto !important;
 max-width: 550px;
 position: relative;
 cursor: pointer;
+img{
+    min-width: 319px;
+    min-height: 195px;
+}
 div{
     position: absolute;
-    background: #1e1e1ef7;
+    background: #000000ba;
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -30,6 +34,7 @@ div{
     padding: 20px;
     display: none;
     z-index: 200;
+    transition: all 1s ease;
     h3{
         text-align: center;
         color: white;

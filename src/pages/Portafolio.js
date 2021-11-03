@@ -13,7 +13,7 @@ const Portafolio = () => {
         <Layout>
             <Container>
                     <Projects 
-                    title={'My Portfolio'} NotSkills={'no baby'}/>
+                    title={'My Projects'} NotSkills={'no baby'}/>
             </Container>
         </Layout>
     )

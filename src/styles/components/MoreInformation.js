@@ -19,21 +19,20 @@ div{
 a{
     background: #5f27bd;
     color: white;
-    width: 280px;
+    width: 240px;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.2rem;
-    letter-spacing: 2px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     margin-inline: 10px;
     margin-top: 10px;
     border: 1px solid white;
+    justify-content: space-around;
     svg{
         margin-left: 1px;
     }

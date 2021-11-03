@@ -1,18 +1,18 @@
 import React, {useState} from "react"
-import ButtonSelect from "./ButtonSelect"
+//import ButtonSelect from "./ButtonSelect"
 import { useInView } from 'react-intersection-observer';
 import { useStaticQuery, graphql } from 'gatsby';
 import Search from './Search'
 import {Cotainer, Div} from '../styles/components/Projects'
 import ElementProjects from "./ElementProjects"
+import ButtonSelect from './ButtonSelect'
 
+const languages = ["HTML", "CSS", "SASS", "LESS", "JAVASCRIPT", "REACT", "NEXT JS", "GATSBY", "WEBPACK",  "FULLSTACK", "NODE JS", "MONGO DB", "ALL PROJECTS", "GRAPH QL", "ANGULAR", "VUE"]
 
-
-
-const languages = ["HTML", "CSS", "SASS", "LESS", "JAVASCRIPT", "REACT", "NEXT JS", "GATSBY", "WEBPACK",  "FULLSTACK", "NODE JS", "MONGO DB", "ALL PROJECTS", "GRAPH QL", "ANGULAR"]
 const Projects =({title, Skills}) =>{
   //Search TI
   const [dataSelect, setDataSelect] = useState(null)
+  const [buttonNone, setButtonNone] = useState(false)
 
     //get Data from Cms
   const DataProjects = useStaticQuery(graphql`
@@ -51,14 +51,18 @@ const Projects =({title, Skills}) =>{
             <h2>{title}</h2>
             <p>{Skills}</p>
             <Div>
-            {languages.map(items => (       
-                  <ButtonSelect 
-                  name={items} 
-                  data={DataProjects.allDatoCmsPortafolio.nodes}
-                  dataSelect={dataSelect}
-                  setDataSelect={setDataSelect}
-                  />
-            ))}
+              {
+            languages.map(items => (       
+              <ButtonSelect 
+              name={items} 
+              data={DataProjects.allDatoCmsPortafolio.nodes}
+              dataSelect={dataSelect}
+              setDataSelect={setDataSelect}
+              buttonNone={buttonNone}
+              setButtonNone={setButtonNone}
+              />
+        ))
+              }
             </Div>
             {dataSelect ? (
               <Search

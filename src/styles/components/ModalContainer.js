@@ -23,6 +23,8 @@ button{
 img{
     width: 80%;
     max-width: 500px;
+    min-width: 275px;
+    min-height: 170px;
 }
 div{
     h2{
@@ -52,6 +54,7 @@ div{
         text-decoration: none;
         &:hover{
             background: #431d82;
+            transform: scale(1.03);
         }
         svg{
             margin-left: 10px;
