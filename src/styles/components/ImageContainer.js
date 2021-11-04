@@ -69,7 +69,7 @@ div{
 }
 &:hover{
     div{
-        display: block;
+        display: flex;
     }
 }
 @media (max-width: 500px){
