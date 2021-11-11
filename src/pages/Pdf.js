@@ -18,7 +18,7 @@ const Pdf = () => {
             data={MyCv}
             type="application/pdf"
             width="100%"
-            height="100%"
+            height="105%"
             >
                 <div>
                     <img src='https://www.programando.org/blog/2021/06/28/el-camino-del-backend-developer-lenguajes-formales/featured.png' alr='Frontend Developer'/>

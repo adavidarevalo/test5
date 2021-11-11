@@ -34,8 +34,10 @@ const ModalContainer = ({data, modalIsOpen, closeModal}) => {
                   <div>
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <Link to={linkPreviewpage} target='_blank'>Preview Page <AiOutlineFileText/></Link>
-                    <Link to={linkGithub} target='_blank'>View Code <AiFillGithub/></Link>
+                    <div>
+                      <Link to={linkPreviewpage} target='_blank'>Preview Page <AiOutlineFileText/></Link>
+                      <Link to={linkGithub} target='_blank'>View Code <AiFillGithub/></Link>
+                    </div>
                   </div>
                 </ModalSection>
         </Modal>

@@ -37,6 +37,12 @@ div{
        width: 80%;
        margin: 10px auto;
     }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 16px auto;
+    }
     a{
         display: flex;
         justify-content: center;

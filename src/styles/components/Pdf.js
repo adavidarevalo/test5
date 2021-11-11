@@ -4,12 +4,13 @@ import styled from '@emotion/styled'
 export const Container = styled.div`
 position: absolute;
 width: 100%;
-height: 90%;
+height: 93vh;
 background: #323639;
 overflow: hidden;
+background: gray;
 div{
     background: white;
-    min-height: 38vh;
+    min-height: 39vh;
     display: flex;
     flex-direction: column;
     align-items: center;
