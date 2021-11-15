@@ -5,6 +5,7 @@ import { Container } from '../../styles/components/ContactContainer'
 
 const ContactContainer = () => {
     const form = useRef();
+    const recaptchaRef = useRef();
     const [MSG, setMSG] = useState({
         code: 0,
         msg: ''
@@ -41,8 +42,8 @@ const ContactContainer = () => {
                 msg: 'Message Sent'
             })
             document.getElementById('FormContact').reset();
-            ReCAPTCHA.reload()
             resetMsg()
+            recaptchaRef.current.reset()
         }, (error) => {
             console.log(error.text);
             setMSG({
@@ -96,6 +97,7 @@ const ContactContainer = () => {
                         </div>
                         <div className='ValidatorElement'>
                         <ReCAPTCHA
+                        ref={recaptchaRef}
                         sitekey="6Lc6ajQdAAAAANCGkBgexm-ds-_LB8dZWUqWIaBg"
                         onChange={onChange}
                         />
