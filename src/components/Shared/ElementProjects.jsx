@@ -3,7 +3,7 @@ import ImageContainer from "./ImageContainer"
 import ImageRow from "./ImageRow"
 import { AiOutlineBars } from "react-icons/ai";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
-import { ButtonProject, ElementContainer } from '../styles/components/ElementProjects'
+import { ButtonProject, ElementContainer } from '../../styles/components/ElementProjects'
 
 
 const ElementProjects = ({inView, setGalery, galery, elements}) => {

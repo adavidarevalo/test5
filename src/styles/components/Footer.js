@@ -41,7 +41,7 @@ ul{
       }
     }
 }
-@media (max-width: 460px){
+@media (max-width: 600px){
   ul{
     text-align: center;
   }
@@ -63,6 +63,6 @@ ul{
   }
 }
   .NavLinks{
-    width: 300px;
+    width: 400px;
   }
 ` 

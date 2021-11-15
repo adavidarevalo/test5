@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby';
 import IconLanguage from './IconLanguage'
-import {ContainerSection} from '../styles/components/MySkills'
+import {ContainerSection} from '../../styles/components/MySkills'
 
 const MySkills = () => {
     const Container= useStaticQuery(graphql`

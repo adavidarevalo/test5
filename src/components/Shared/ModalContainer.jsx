@@ -2,7 +2,7 @@ import React from 'react'
 import Modal from 'react-modal';
 import { AiFillGithub, AiOutlineFileText, AiFillCloseCircle } from "react-icons/ai";
 import {Link} from 'gatsby'
-import {ModalSection} from '../styles/components/ModalContainer'
+import {ModalSection} from '../../styles/components/ModalContainer'
 
 
 const customStyles = {

@@ -3,7 +3,7 @@ import React, {useState} from "react"
 import { useInView } from 'react-intersection-observer';
 import { useStaticQuery, graphql } from 'gatsby';
 import Search from './Search'
-import {Cotainer, Div} from '../styles/components/Projects'
+import {Cotainer, Div} from '../../styles/components/Projects'
 import ElementProjects from "./ElementProjects"
 import ButtonSelect from './ButtonSelect'
 

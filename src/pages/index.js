@@ -1,10 +1,10 @@
 import * as React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Main from '../components/Main'
-import AboutMe from '../components/AboutMe'
-import Projects from '../components/Projects'
-
+import Layout from "../components/Layout/layout"
+import Seo from "../components/Layout/seo"
+import Main from '../components/Home/Main'
+import Abilities from '../components/Home/Abilities'
+import AboutMe from '../components/Shared/AboutMe'
+import Banner from '../components/Shared/Banner.jsx'
 
 const IndexPage = () =>{
   return(
@@ -12,7 +12,8 @@ const IndexPage = () =>{
       <Seo/>
       <Main/>
       <AboutMe/>
-      <Projects title={'Projects'} Skills={'My Skills'}/>
+      <Abilities/>
+      <Banner/>
     </Layout>
   )
 } 

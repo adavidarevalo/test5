@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {Button} from '../styles/components/ButtonSelect'
+import {Button} from '../../styles/components/ButtonSelect'
 
 const ButtonSelect = ({name, data, dataSelect, setDataSelect, buttonNone, setButtonNone}) =>{
   const [Element, setElement] = useState(false)

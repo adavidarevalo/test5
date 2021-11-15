@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
 import { AiFillFacebook,  AiFillGithub, AiFillMail, AiOutlineWhatsApp } from "react-icons/ai";
-import {ContainerFooter, List} from '../styles/components/Footer'
+import {ContainerFooter, List} from '../../styles/components/Footer'
 
 const Footer = () => {
     //year
@@ -21,6 +21,9 @@ const Footer = () => {
                         <li>
                           <Link to='/Portafolio'>Projects</Link>
                         </li>
+                        <li>
+                          <Link to='/Contact'>Contact</Link>
+                        </li>
                     </ul>
                     <ul className="SocialContainer">
                         <li>
@@ -39,7 +42,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <Link to="https://api.whatsapp.com/send?phone=+593995402222" rel="nofollow ugc"     target="_blank">
+                            <Link to="https://api.whatsapp.com/send?phone=+593995402222" rel="nofollow ugc" target="_blank">
                               <AiOutlineWhatsApp/>
                             </Link>
                         </li>

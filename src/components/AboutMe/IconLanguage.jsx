@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container} from '../styles/components/IconLanguage'
+import {Container} from '../../styles/components/IconLanguage'
 import LazyLoad from 'react-lazyload';
 
 const IconLanguage = ({data}) => {

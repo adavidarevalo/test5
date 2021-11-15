@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from 'gatsby'
 import { AiOutlineFullscreen, AiFillGithub, AiOutlineFileText } from "react-icons/ai";
 import ModalContainer from './ModalContainer';
-import {Container} from '../styles/components/ImageContainer'
+import {Container} from '../../styles/components/ImageContainer'
 import LazyLoad from 'react-lazyload';
 
 

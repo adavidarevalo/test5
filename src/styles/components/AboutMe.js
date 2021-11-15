@@ -54,6 +54,7 @@ div{
     }
     p{
         margin-block: 25px;
+        color: #484848;
     }
     a{
         margin-block: 25px;
@@ -63,6 +64,7 @@ div{
         text-decoration: none;
         font-size: 1.2rem;
         color: #3e3d3d;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         &:hover{
             text-decoration: underline;
         }

@@ -1,6 +1,6 @@
 import React from "react"
-import sombras from "../images/sombras.png"
-import {Div, ContainerDiv, Container, TypeContainer} from '../styles/components/Main'
+import sombras from "../../images/sombras.png"
+import {Div, ContainerDiv, Container, TypeContainer} from '../../styles/components/Main'
 import { Typewriter } from 'react-simple-typewriter'
 
 const Main = () => {

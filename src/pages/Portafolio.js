@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from "../components/layout"
-import Projects from '../components/Projects'
+import Layout from "../components/Layout/layout"
+import Projects from '../components/Shared/Projects'
 import styled from '@emotion/styled'
 
 const Container = styled.section`

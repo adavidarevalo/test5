@@ -25,7 +25,7 @@ div{
   }
   ul{
     position: absolute;
-    top: -125px;
+    top: -175px;
     width: 100%;
     background: #333333;
     padding: 10px;
@@ -61,6 +61,7 @@ div{
       text-decoration: none;
       color: white;
       font-family: 'Ubuntu', sans-serif;
+      transition: all .6s ease;
       &:hover{
         color: #c2beef;
       }

@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import {Container} from "../styles/components/404"
 import NotFount from "../images/NotFound.png"
 

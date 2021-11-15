@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import {Link} from 'gatsby'
-import logo from "../images/logo.png"
-import { ContainerHeader, LogoContainer } from '../styles/components/Header.js'
+import logo from "../../images/logo.png"
+import { ContainerHeader, LogoContainer } from '../../styles/components/Header.js'
 
 const Header = (props) =>{
   const [menu, setMenu] = useState(true)
@@ -31,6 +31,10 @@ const Header = (props) =>{
           to='/Portafolio'
           activeClassName="activePage"
           >Projects</Link>
+          <Link
+          to='/Contact'
+          activeClassName="activePage"
+          >Contact</Link>
         </ul>
         <nav>
             <Link 
@@ -45,6 +49,10 @@ const Header = (props) =>{
             to='/Portafolio'
             activeClassName="activePage"
             >Projects</Link>
+          <Link
+          to='/Contact'
+          activeClassName="activePage"
+          >Contact</Link>
         </nav>
       </div>
     </ContainerHeader>

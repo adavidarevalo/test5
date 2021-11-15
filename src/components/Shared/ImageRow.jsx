@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import { AiOutlineFullscreen, AiFillGithub, AiOutlineFileText } from "react-icons/ai";
 import ModalContainer from './ModalContainer';
 import LazyLoad from 'react-lazyload';
-import {Container, ButtonContainer} from '../styles/components/ImageRow.js'
+import {Container, ButtonContainer} from '../../styles/components/ImageRow.js'
 
 
 const ImageRow= ({name}) =>{

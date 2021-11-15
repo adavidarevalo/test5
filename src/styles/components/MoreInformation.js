@@ -10,6 +10,7 @@ margin: 0 auto;
 p{
     margin-block: 25px;
     font-family: 'Ubuntu', sans-serif;
+    color: #484848;
 }
 div{
     display: flex;

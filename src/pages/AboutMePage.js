@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from "../components/layout"
-import AboutMe from '../components/AboutMe'
-import MoreInformation from '../components/MoreInformation'
-import MySkills from '../components/MySkills'
+import Layout from "../components/Layout/layout"
+import AboutMe from '../components/Shared/AboutMe'
+import MoreInformation from '../components/AboutMe/MoreInformation'
+import MySkills from '../components/AboutMe/MySkills'
 
 
 const AboutMePage = () => {

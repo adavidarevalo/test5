@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import Footer from './Footer.jsx'
 import "./layout.css"
-import favicon from '../images/favicon.png'
+import favicon from '../../images/favicon.png'
 import Helmet from 'react-helmet'
 
 const Layout = ({ children }) => {
