@@ -51,6 +51,7 @@ background-size: cover;
             width: 100%;
             outline: none;
             padding: 5px 10px;
+            font-family: 'Ubuntu',sans-serif;
         }
         div{
             margin-bottom: 20px;

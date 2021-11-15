@@ -65,6 +65,7 @@ display: flex;
 align-items: center;
 transform: translateX(-50px);
 transition: all .5s ease;
+z-index: 100;
 &.Active{
     transform: translateX(0px);
 }

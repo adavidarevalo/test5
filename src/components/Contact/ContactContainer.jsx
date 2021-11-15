@@ -40,6 +40,8 @@ const ContactContainer = () => {
                 code: 2,
                 msg: 'Message Sent'
             })
+            document.getElementById('FormContact').reset();
+            ReCAPTCHA.reload()
             resetMsg()
         }, (error) => {
             console.log(error.text);
@@ -59,6 +61,7 @@ const ContactContainer = () => {
                     <form
                     ref={form}
                     onSubmit={SendEmail}
+                    id='FormContact'
                     >
                         <div>
                             <label>Name</label>

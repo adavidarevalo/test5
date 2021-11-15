@@ -7,7 +7,7 @@ width: 100%;
 height: 93vh;
 background: #323639;
 overflow: hidden;
-background: gray;
+background: white;
 div{
     background: white;
     min-height: 39vh;

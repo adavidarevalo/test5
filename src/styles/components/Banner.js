@@ -1,15 +1,8 @@
 import styled from '@emotion/styled'
-import { keyframes } from '@emotion/react';
-
-const fadeIn = keyframes`
-0% {opacity: 0;}
-100% {opacity: 1;}
-`
 
 export const Container = styled.section`
 position: relative;
 display: flex;
-animation: ${fadeIn} 1s both;
 video{
     width: 100%;
     height: 300px;

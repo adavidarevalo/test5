@@ -2,11 +2,9 @@ import React from 'react'
 import CodeVideo from '../../images/CodeVideo.mp4'
 import {Link} from 'gatsby'
 import { Container } from '../../styles/components/Banner'
-import LazyLoad from 'react-lazyload';
 
 const Banner = () => {
     return(
-        <LazyLoad once >
         <Container>
             <video autoPlay muted loop>
                 <source src={CodeVideo} type="video/mp4"/>
@@ -19,7 +17,6 @@ const Banner = () => {
 
             </div>
         </Container>
-        </LazyLoad>
     )
 }
 
