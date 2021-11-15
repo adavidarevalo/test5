@@ -1,6 +1,7 @@
 import React from 'react'
 import designer from '../../images/designer.svg'
 import frontend from '../../images/frontend.svg'
+import seo from '../../images/seo.svg'
 import { Container } from '../../styles/components/Abilities'
 import LazyLoad from 'react-lazyload';
 
@@ -15,10 +16,10 @@ const AbilitiesContainer = [
         image: frontend,
         title: 'Front-end Developer',
         paragraph: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.',
-        abilities: 'HTML, CSS, Sass, Less, Angular, React, Redux, Vue',
+        abilities: 'Html, Css, Javascript, Sass, Less, Angular, React, Redux, Vue',
     },
     {
-        image: frontend,
+        image: seo,
         title: 'Performance and SEO',
         paragraph: 'I like to make your website fast, easy to find, and reach the widest audience possible.'
     }
