@@ -75,6 +75,7 @@ background-size: cover;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: 'Ubuntu',sans-serif;
             p{
                 margin: 0px;
             }

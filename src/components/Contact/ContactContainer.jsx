@@ -44,6 +44,7 @@ const ContactContainer = () => {
             document.getElementById('FormContact').reset();
             resetMsg()
             recaptchaRef.current.reset()
+            setRobot(false)
         }, (error) => {
             console.log(error.text);
             setMSG({
