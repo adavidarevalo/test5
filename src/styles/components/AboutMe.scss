@@ -1,0 +1,68 @@
+.AboutMe-Container{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 85%;
+        margin: 0 auto;
+        max-width: 750px;
+    }
+    .Container{
+        width: 80%;
+        margin: 20px auto 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        .Table{
+            div{
+                display: block;
+                grid-template-columns: 95px 2fr;
+                max-width: 350px;
+                @media (min-width: 375px){
+                    display: grid;
+                }
+            }
+        }
+        .AboutMe-Intro{
+            margin: 0px;
+            color: $color-sky;
+            font-size: 1.1rem;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h2{
+            color: $color-blue;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        h3{
+            margin: 0px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        p{
+            color: $color-gray;
+            font-size: 1.1rem;
+            line-height: 30px;
+        }
+        svg{
+            color: $color-sky;
+        }
+        .Languages-Title{
+            color: $color-blue;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        td{
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+    @media (min-width: 1000px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

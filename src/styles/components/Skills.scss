@@ -1,0 +1,104 @@
+.Skills-Container{
+    padding-block: 50px 30px;
+    .ChooseMe{
+        margin: 0px;
+        color: $color-sky;
+        font-size: 1.1rem;
+        font-weight: 500;  
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        letter-spacing: 2px;
+        color: $color-blue;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .Skills-Table{
+        display: grid;
+        max-width: 1300px;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    .Skills-Element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        div{
+            background: #ededed87;
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #4eabff;
+            img{
+                width: 70%;
+                height: 70%;
+                margin: 0px;
+                &:hover,
+                &:active{
+                    animation: tada 1s both;
+                }
+            }
+        }
+        p{
+            margin-block: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            color: $color-gray;
+        }
+    }  
+    @media (min-width: 400px){
+        .Skills-Table{
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 500px){
+        .Skills-Table{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 600px){
+        .Skills-Table{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 900px){
+        .Skills-Table{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width: 1000px){
+        .Skills-Table{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+@keyframes tada {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    } 
