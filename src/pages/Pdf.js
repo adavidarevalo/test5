@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import MyCv from '../fileDownload/MyCv.pdf'
 import Layout from "../components/Layout/layout"
 import { AiOutlineCloudDownload } from "react-icons/ai";
-import {Container} from '../styles/components/Pdf'
 
 const Pdf = () => {
     useEffect(() => {
@@ -13,7 +12,7 @@ const Pdf = () => {
     }, [])
     return (
         <Layout>
-        <Container>
+        <div className='Pdf-Container'>
             <object
             data={MyCv}
             type="application/pdf"
@@ -27,7 +26,7 @@ const Pdf = () => {
                   >Your device cannot view pdf, Downloading Automatically. <AiOutlineCloudDownload/></a> 
                 </div>
             </object>
-        </Container>
+        </div>
         </Layout>
     );
 }

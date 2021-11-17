@@ -3,17 +3,16 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 
 
-function Seo({ description, lang, meta, title }) {
+function Seo() {
 
   return (
     <Helmet>
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet"/>
       <meta name="description" content="David Arevalo potfolio, About FrontEnd"></meta>
       <meta name="keywords" content="Web Developer, David Arevalo, FrontEnd"/>
       <meta name="author" content="David Arevalo" />
       <meta name="copyright" content="David Arevalo copyright" />
+      <meta name="icon" href="../../images/Logo.png" />
+      
       <title>David Portfolio</title>
     </Helmet>
   )

@@ -1,17 +1,14 @@
 import * as React from "react"
 
 import Layout from "../components/Layout/layout"
-import {Container} from "../styles/components/404"
-import NotFount from "../images/NotFound.png"
+import Seo from "../components/Layout/seo"
 
-
-const NotFound = () => (
+const NotFoundPage = () => (
   <Layout>
-    <Container>
-      <img src={NotFount} alt="404"/>
-      <p>Not Found</p>
-    </Container>
+    <Seo title="404: Not found" />
+    <h1>404: Not Found</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Layout>
 )
 
-export default NotFound
+export default NotFoundPage
