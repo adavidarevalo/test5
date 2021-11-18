@@ -35,7 +35,7 @@
       transform: translateY(0px);
     }
     50% {
-      transform: translateY(1px);
+      transform: translateY(3px);
     }
     100% {
       transform: translateY(0px);
@@ -48,8 +48,8 @@
   .Head-Animation {
     position: absolute;
     width: 16%;
-    left: 41%;
-    top: 22%;
+    left: 42%;
+    top: 21%;
     animation: cabeza 1s both infinite;
     transition: all 1s ease;
   }
@@ -59,7 +59,7 @@
     height: 10%;
     top: 0px;
     left: 2%;
-    animation: rotate-center 10s linear infinite both;
+    animation: rotate-center 3s linear infinite both;
   }
   .css {
     position: absolute;

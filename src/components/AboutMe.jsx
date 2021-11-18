@@ -26,14 +26,13 @@ const AboutMe = () => {
                         </div>
                 </div>
                 <h3 className='Languages-Title'>Lenguages</h3>
-                <table>
+                <table id='Services'>
                     <tr>
                         <td>English</td>
                         <td>Spanish</td>
                         <td>Portuguese</td>
                     </tr>
                 </table>
-                <div id='Services'></div>
             </div>
         </section>
     )

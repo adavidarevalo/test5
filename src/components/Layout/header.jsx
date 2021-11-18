@@ -16,9 +16,7 @@ const Header = () =>{
     <>
   <header>
     <div>
-    <Link to='#Home'>
-      <img src={logo} alt="Logo" className='Logo'/>
-    </Link>
+    <img src={logo} alt="Logo" className='Logo'/>
     <button onClick={changeMenu}>
       {Menu
       ? <AiOutlineClose/>
