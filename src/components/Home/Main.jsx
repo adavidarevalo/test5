@@ -1,5 +1,5 @@
 import React from "react"
-import sombras from "../../images/sombras.png"
+import wave from "../../images/wave.svg"
 import {Div, ContainerDiv, Container, TypeContainer} from '../../styles/components/Main'
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -8,7 +8,7 @@ const Main = () => {
         <Container>
           <ContainerDiv>
                 <img
-                  src={sombras}
+                  src={wave}
                   alt="Person and Computer"
                   />
             <Div>

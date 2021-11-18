@@ -1,5 +1,5 @@
 import React from 'react'
-import person from "../../images/person.png"
+import wave from "../../images/wave.svg"
 import { AiFillStar, AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "gatsby"
 import { Container, ContainerDiv } from '../../styles/components/AboutMe'
@@ -13,7 +13,7 @@ const AboutMe = ({ LinkNo }) => {
         <h2>About Me</h2>
         <ContainerDiv>
           <img
-            src={person}
+            src={wave}
             alt="Person and Computer"
           />
           <div>

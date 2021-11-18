@@ -1,25 +1,23 @@
 import React from 'react'
-import designer from '../../images/designer.svg'
-import frontend from '../../images/frontend.svg'
-import seo from '../../images/seo.svg'
+import wave from '../../images/wave.svg'
 import { Container } from '../../styles/components/Abilities'
 import LazyLoad from 'react-lazyload';
 
 const AbilitiesContainer = [
     {
-        image: designer,
+        image: wave,
         title: 'Designer',
         paragraph: 'I value simple content structure, clean design patterns, and thoughtful interactions.',
         abilities: 'UX, UI, Web, Logos',
     },
     {
-        image: frontend,
+        image: wave,
         title: 'Front-end Developer',
         paragraph: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.',
         abilities: 'Html, Css, Javascript, Sass, Less, Angular, React, Redux, Vue',
     },
     {
-        image: seo,
+        image: wave,
         title: 'Performance and SEO',
         paragraph: 'I like to make your website fast, easy to find, and reach the widest audience possible.'
     }
