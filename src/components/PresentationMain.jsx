@@ -32,7 +32,7 @@ const PresentationMain = () => {
                 <p>I am a Developer, passionate about web technologies especially <span className='Tecnologies'>Angular, React and Vue</span>. With a hard-working spirit that never stops learning. I am in favor of creating intuitive, scalable and reliable code.</p>
                 <div>
                     <a href={MyCv} download='David-Arevalo-Cv.pdf'>Download CV</a>
-                    <Link to='#ContactMe'>Contact Me</Link>
+                    <Link to='/Pdf'>See My Cv Online</Link>
                 </div>
             </div>
         </section>
