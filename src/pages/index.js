@@ -11,6 +11,7 @@ import Portfolio from '../components/Portfolio'
 import Form from '../components/Form'
 import '../../node_modules/aos/dist/aos.css'
 import Aos from 'aos'
+import '../styles/home.scss'
 
 const IndexPage = () =>{
   useEffect(() => {
