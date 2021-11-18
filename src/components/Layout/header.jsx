@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "@reach/router";
 import '../../styles/components/Layout/Header.scss'
+import logo from '../../images/logo.png'
 const Header = () =>{
   const [Menu, setMenu] = useState(false)
   const [ElementSelect, setElementSelect] = useState(1)
@@ -16,7 +17,7 @@ const Header = () =>{
   <header>
     <div>
     <Link to='#Home'>
-      <p>Yes baby</p>
+      <img src={logo} alt="Logo" className='Logo'/>
     </Link>
     <button onClick={changeMenu}>
       {Menu

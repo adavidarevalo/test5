@@ -37,7 +37,6 @@ const Form = () => {
         }
         emailjs.sendForm('service_p31mns6', 'template_w3ooalm', form.current, 'user_PGYSp4WJ5LbQE2931rfnp')
         .then((result) => {
-            console.log(result.text);
             setMSG({
                 code: 2,
                 msg: 'Message Sent'
@@ -47,7 +46,6 @@ const Form = () => {
             recaptchaRef.current.reset()
             setRobot(false)
         }, (error) => {
-            console.log(error.text);
             setMSG({
                 code: 1,
                 msg: 'There was a Error, Try again.'
@@ -69,11 +67,26 @@ const Form = () => {
                 >
                     <div>
                         <div className='Form-Divide'>
-                            <input type="text" placeholder='Name' required/>
-                            <input type="email" placeholder='Email' required/>
+                            <input 
+                            type="text" 
+                            placeholder='Name' 
+                            name='user_name'
+                            required/>
+                            <input 
+                            type="email" 
+                            placeholder='Email' 
+                            name='user_email'
+                            required/>
                         </div>
-                        <input type='text' placeholder='Subject' required/>
-                        <textarea placeholder='Message'></textarea>
+                        <input 
+                        type='text' 
+                        placeholder='Subject' 
+                        name='user_subject'
+                        required/>
+                        <textarea 
+                        placeholder='Message'
+                        name='message'
+                        ></textarea>
                     </div>
                     <ReCAPTCHA
                         ref={recaptchaRef}

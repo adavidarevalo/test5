@@ -44,6 +44,7 @@
                 max-width: 200px;
                 transition: all .5s ease;
                 cursor: pointer;
+                margin-top: 10px;
                 &:hover,
                 &:active{
                     background: #002260;
@@ -102,7 +103,7 @@
 .Msg{
     width: 100%;
     color: white;
-    background: #46d346;
+    background: #4eabff;
     padding: 5px;
     letter-spacing: 2px;
     font-weight: 600;
@@ -113,13 +114,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Ubuntu',sans-serif;
+    border-radius: 5px;
     p{
         margin: 0px;
+        color: white;
     }
     &.Error{
         opacity: 1;
-        background: #ff0000d9;
+        background: #ff0000cb;
     }
     &.True{
         opacity: 1;
