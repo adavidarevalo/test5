@@ -28,12 +28,12 @@ footer{
                     justify-content: center;
                     align-items: center;
                     svg{
-                        color: $color-white;
+                        color: white;
                     }
                 }
                 &:hover,
                 &:active{
-                    background: $color-white;
+                    background: white;
                     transform: scale(1.1);
                     a > svg{
                         color: #4eabff;

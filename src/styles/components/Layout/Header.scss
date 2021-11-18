@@ -1,5 +1,5 @@
 header{
-    background: $color-white;
+    background: white;
     padding-block: 12px;
     position: fixed;
     top: 0px;
@@ -23,15 +23,15 @@ header{
             justify-content: space-between;
             display: none;
             a{
-                color: $color-gray;
+                color: #5a5a5a;
                 border-bottom: 1px solid transparent;
             }
              a:hover,
              a:active{
-                border-bottom: 1px solid $color-sky;
+                border-bottom: 1px solid #4eabff;
              }
             .Active{
-                border-bottom: 1px solid $color-sky;
+                border-bottom: 1px solid #4eabff;
             }
         }
         button{
@@ -50,7 +50,7 @@ header{
     }
 }
 .MenuMovil{
-    background: $color-grayBck;
+    background: #E8E9EA;
     width: 250px;
     height: 89vh;
     position: fixed;
@@ -65,7 +65,7 @@ header{
     a{
         text-decoration: none;
         font-size: 1.3rem;
-        color: $color-gray;
+        color: #5a5a5a;
         margin-block: 20px;
         letter-spacing: 1px;
     }
