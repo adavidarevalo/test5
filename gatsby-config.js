@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -31,11 +30,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-datocms`,
-      options: {
-        apiToken: `3971ab78381033128e6be64c281e7f`
-      },
-    }
+    resolve: `gatsby-source-datocms`,
+    options: {
+      apiToken: `3971ab78381033128e6be64c281e7f`
+    },
+  },
+    `gatsby-plugin-gatsby-cloud`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
