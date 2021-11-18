@@ -1,7 +1,7 @@
 import React from 'react'
 import wave from '../../images/wave.svg'
 import { AiOutlineFacebook, AiOutlineWhatsApp, AiOutlineMail, AiFillGithub } from "react-icons/ai";
-
+import '../../styles/components/Layout/Footer.scss'
 const Footer = () => {
     return(
         <footer>

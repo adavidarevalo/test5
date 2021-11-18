@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "@reach/router";
-
+import '../../styles/components/Layout/Header.scss'
 const Header = () =>{
   const [Menu, setMenu] = useState(false)
   const [ElementSelect, setElementSelect] = useState(1)
