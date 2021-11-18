@@ -1,5 +1,5 @@
 import React from 'react'
-import './Animation.scss'
+import './Animation.css'
 import Cuerpo from "./Cuerpo.svg" 
 import cabeza from './cabeza.svg'
 import road from './road.svg'

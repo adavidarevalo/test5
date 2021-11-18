@@ -9,9 +9,13 @@ import Skills from '../components/Skills'
 import Banner from '../components/Banner'
 import Portfolio from '../components/Portfolio'
 import Form from '../components/Form'
+import '../../node_modules/aos/dist/aos.css'
+import Aos from 'aos'
 
 const IndexPage = () => {
-
+  useEffect(() => {
+    Aos.init({duration: 1000});
+}, [])
 return(
   <Layout>
     <Seo title="David Arevalo" />
