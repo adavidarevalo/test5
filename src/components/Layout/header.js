@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "@reach/router";
-import Logo from '../../images/Logo.png'
 
 const Header = () =>{
   const [Menu, setMenu] = useState(false)
@@ -17,7 +16,7 @@ const Header = () =>{
   <header>
     <div>
     <Link to='#Home'>
-      <img src={Logo} alt='Logo' className='Logo'/>
+      <p>Yes baby</p>
     </Link>
     <button onClick={changeMenu}>
       {Menu
