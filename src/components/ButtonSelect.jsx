@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import '../styles/components/Portfolio.scss'
 
 const ButtonSelect = ({name, data, dataSelect, setDataSelect, buttonNone, setButtonNone}) =>{
   const [Element, setElement] = useState(false)

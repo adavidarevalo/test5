@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineUser, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import aboutMe from '../images/aboutMe.png'
+import '../styles/components/AboutMe.scss'
 
 const AboutMe = () => {
     return(

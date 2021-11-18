@@ -2,6 +2,7 @@ import React from 'react'
 import designer from './../images/designer.svg'
 import frontend from './../images/frontend.svg'
 import seo from './../images/seo.svg'
+import '../styles/components/Abilities.scss'
 
 const AbilitiesContainer = [
     {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineFacebook, AiOutlineWhatsApp, AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
+import '../styles/components/AsideSocial.scss'
 
 const AsideSocial = () => {
     return(

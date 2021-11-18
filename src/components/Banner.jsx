@@ -1,5 +1,6 @@
 import React from 'react'
 import CodeVideo from '../images/CodeVideo.mp4'
+import '../styles/components/Banner.scss'
 
 const Banner = () => {
     return(

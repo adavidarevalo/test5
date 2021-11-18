@@ -25,7 +25,7 @@
         }
         .AboutMe-Intro{
             margin: 0px;
-            color: $color-sky;
+            color: #4eabff;
             font-size: 1.1rem;
             font-weight: 500;
             display: flex;
@@ -33,7 +33,7 @@
             justify-content: center;
         }
         h2{
-            color: $color-blue;
+            color: rgb(0,34,96);
             font-size: 2rem;
             letter-spacing: 2px;
         }
@@ -43,15 +43,15 @@
             font-weight: 600;
         }
         p{
-            color: $color-gray;
+            color: #5a5a5a;
             font-size: 1.1rem;
             line-height: 30px;
         }
         svg{
-            color: $color-sky;
+            color: #4eabff;
         }
         .Languages-Title{
-            color: $color-blue;
+            color: rgb(0,34,96);
             font-size: 2rem;
             letter-spacing: 2px;
             margin-bottom: 20px;

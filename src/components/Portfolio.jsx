@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import ButtonSelect from './ButtonSelect'
 import ProjectsElements from './ProjectsElements'
 import waveSquare from '../images/waveSquare.svg'
+import '../styles/components/Portfolio.scss'
 
 const Portfolio = () => {
     const [dataSelect, setDataSelect] = useState([])

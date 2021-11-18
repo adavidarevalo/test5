@@ -3,6 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import MyCv from '../fileDownload/MyCv.pdf'
 import AnimationMain from './animationMain/AnimationMain'
 import { Link } from "@reach/router";
+import '../styles/components/PresentationMain.scss'
 
 const PresentationMain = () => {
     return(

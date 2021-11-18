@@ -1,5 +1,5 @@
 .Presentation-Container{
-    background: $color-grayBck;
+    background: #E8E9EA;
     margin-top: 67px;
     min-height: 93vh;
     .AnimationElement{
@@ -16,27 +16,27 @@
         flex-direction: column;
         justify-content: center;
         h3{
-            color: $color-blue;
+            color: rgb(0,34,96);
             font-size: 2rem;
             letter-spacing: 2px;
             margin-bottom: 10px;
         }
         .Presentation-Greeting{
-            color: $color-sky;
+            color: #4eabff;
             font-weight: 500;
             margin: 0px;
         }
         p{
-            color: $color-gray;
+            color: #5a5a5a;
             font-size: 1rem;
             line-height: 30px;
             span{
-                color: $color-blue;
+                color: rgb(0,34,96);
                 font-size: 1.2rem;
                 font-weight: 500;
             }
             .Tecnologies{
-                color: $color-gray;
+                color: #5a5a5a;
                 font-size: 1rem;
                 font-weight: 600;
                 letter-spacing: 1px;
@@ -61,22 +61,22 @@
                 transition: all .5s ease;
             }
             a:first-child{
-                background: $color-sky;
-                color: $color-white;
+                background: #4eabff;
+                color: #ffffff;
                 &:hover,
                 &:active{
-                    background: $color-blue;
-                    color: $color-white;
+                    background: rgb(0,34,96);
+                    color: #ffffff;
                 }
             }
             a:last-child{
-                border: 1px solid $color-sky;
-                color: $color-gray;
+                border: 1px solid #4eabff;
+                color: #5a5a5a;
                 max-width: 200px;
                 &:hover,
                 &:active{
-                    background: $color-sky;
-                    color: $color-white;
+                    background: #4eabff;
+                    color: #ffffff;
                 }
             }
         }

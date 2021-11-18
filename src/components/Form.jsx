@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react'
 import { AiFillPushpin, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from 'emailjs-com';
+import '../styles/components/Form.scss'
 
 const Form = () => {
     const form = useRef();

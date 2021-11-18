@@ -2,13 +2,13 @@
     max-width: 1300px;
     margin: 0 auto;
     p{
-        color: $color-sky;
+        color: #4eabff;
         margin: 0px;
         font-size: 1.1rem;
         font-weight: 500;
     }
     h2{
-        color: $color-blue;
+        color: rgb(0,34,96);
         font-size: 2rem;
         letter-spacing: 2px;
     }
@@ -21,7 +21,7 @@
                 width: 100%;
                 padding: 8px 10px;
                 font-size: 1.1rem;
-                color: $color-blue;
+                color: rgb(0,34,96);
                 outline: none;
                 border: none;
                 border-bottom: 1px solid #4eabff;
@@ -34,7 +34,7 @@
             }
             .Form-Submit{
                 border: 1px solid #4eabff;
-                color: $color-blue;
+                color: rgb(0,34,96);
                 background: none;
                 border-radius: 20px;
                 padding: 10px 15px;
@@ -93,7 +93,7 @@
                 font-size: 1.2rem;
             }
             p{
-                color: $color-gray;
+                color: #5a5a5a;
                 font-size: 1rem;
             }
         }

@@ -3,6 +3,7 @@ import { AiOutlineArrowsAlt } from "react-icons/ai";
 import Modal from 'react-modal';
 import { AiFillGithub, AiOutlineFileText, AiFillCloseCircle } from "react-icons/ai";
 import {Link} from 'gatsby'
+import '../styles/components/Portfolio.scss'
 
 const customStyles = {
     overlay: {
